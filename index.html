@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- displays site properly based on user's device -->
+
+    <link rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png'>
+    <link rel='stylesheet' type='text/css' href='./style.css'>
+    <script defer src='./script.js'></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+<main>
+    <div id="logo__container">
+        <img src='images/logo.svg' alt='logo' id='splitter__logo'>
+    </div>
+    <div class='calculator__container'>
+        <div class='tips__bill'>
+
+            <div class='bill__input'>
+                <span class="input__title">Bill</span>
+                <div class='inputContainer'>
+                    <img src='./images/icon-dollar.svg' alt='icon_dollar'>
+                    <label>
+                        <input type='number' class='inputType' placeholder='0' id='totalCount'>
+                    </label>
+
+                </div>
+            </div>
+
+            <div class='selectTip'>
+                <span class="input__title">Select tip  %</span>
+                <div class='tip__selector'>
+                    <button class='tip' value='0.05' id='cinque'>
+                        5%
+                    </button>
+                    <button class='tip' value='0.10'>
+                        10%
+                    </button>
+                    <button class='tip' value='0.15'>
+                        15%
+                    </button>
+                    <button class='tip' value='0.25'>
+                        25%
+                    </button>
+                    <button class='tip' value='0.50'>
+                        50%
+                    </button>
+                    <label>
+                        <input type='number' placeholder='Custom' class='tip custom'>
+                    </label>
+                </div>
+            </div>
+
+            <div class='number__of__people'>
+                <div id="upperText">
+                    <span class="input__title">Number of people</span>
+                    <span class="error__message">can't be 0</span>
+                </div>
+                <div class='inputContainer'>
+                    <img src='./images/icon-person.svg' alt='icon_dollar'>
+                    <label>
+                        <input type='number' class='inputType' placeholder='0' minlength="1" id='totalPeople'>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='tips_shower'>
+            <div id="tip__total">
+                <div class='tip__amount__person'>
+                    <div class='text__container'>
+                        <span class='important__text'> Tip amount</span>
+                        <span class='subtext'> /person</span>
+                    </div>
+
+                    <span class='singleTip'>$0.00</span>
+                </div>
+                <div class='tip__amount__total'>
+                    <div class='text__container'>
+                        <span class='important__text'> Total</span>
+                        <span class='subtext'> /person</span>
+                    </div>
+                    <span class='amountPrice'>$0.00</span>
+                </div>
+            </div>
+
+            <button class='resetButton' onClick="window.location.reload();">RESET</button>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
